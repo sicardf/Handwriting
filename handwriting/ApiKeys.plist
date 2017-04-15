@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_HANDWRITING_TOKEN</key>
+	<string>ADP5EB13T57R1FWA</string>
+	<key>API_HANDWRITING_SECRET</key>
+	<string>W66XYT6AST5JW7NT</string>
+</dict>
+</plist>
