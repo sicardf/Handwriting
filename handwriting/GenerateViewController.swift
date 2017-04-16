@@ -41,7 +41,7 @@ class ViewController: UIViewController, GenerateDelegate, SettingsDelegate {
     
     func generateImage() {
         self.indicatorView.startAnimating()
-        handwritingModels.text = self.generateView.text!
+        handwritingModels.handwriting_text = self.generateView.text!
         API().req(.getRenderPNG, params: handwritingModels.params) { (bool, data) in
             self.indicatorView.stopAnimating()
             switch bool {

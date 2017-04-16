@@ -15,6 +15,7 @@
 		E335D0B21EA017C800B0BDA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E335D0B11EA017C800B0BDA0 /* Assets.xcassets */; };
 		E335D0B51EA017C800B0BDA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E335D0B31EA017C800B0BDA0 /* LaunchScreen.storyboard */; };
 		E335D0C01EA017C800B0BDA0 /* handwritingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E335D0BF1EA017C800B0BDA0 /* handwritingTests.swift */; };
+		E37F09B91EA3BBE30066CA89 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37F09B81EA3BBE30066CA89 /* UIColor.swift */; };
 		E38BA7CD1EA161BF00B27A2D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BA7CC1EA161BF00B27A2D /* SettingsViewController.swift */; };
 		E38BA7CF1EA1627300B27A2D /* GenerateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E38BA7CE1EA1627300B27A2D /* GenerateView.xib */; };
 		E38BA7D11EA1646D00B27A2D /* GenerateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BA7D01EA1646D00B27A2D /* GenerateView.swift */; };
@@ -49,6 +50,7 @@
 		E335D0BB1EA017C800B0BDA0 /* handwritingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = handwritingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E335D0BF1EA017C800B0BDA0 /* handwritingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = handwritingTests.swift; sourceTree = "<group>"; };
 		E335D0C11EA017C800B0BDA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E37F09B81EA3BBE30066CA89 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = Framedation/Extension/UIColor.swift; sourceTree = "<group>"; };
 		E38BA7CC1EA161BF00B27A2D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E38BA7CE1EA1627300B27A2D /* GenerateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenerateView.xib; sourceTree = "<group>"; };
 		E38BA7D01EA1646D00B27A2D /* GenerateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateView.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				E39B3D431EA13823007DBEB5 /* UIViewController.swift */,
+				E37F09B81EA3BBE30066CA89 /* UIColor.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				E335D0AD1EA017C800B0BDA0 /* GenerateViewController.swift in Sources */,
 				E3E428971EA1439F003ADD49 /* ActivityIndicator.swift in Sources */,
 				E330CE151EA2CDFB0059A613 /* Handwriting.swift in Sources */,
+				E37F09B91EA3BBE30066CA89 /* UIColor.swift in Sources */,
 				E39B3D421EA040D0007DBEB5 /* API.swift in Sources */,
 				E39B3D441EA13823007DBEB5 /* UIViewController.swift in Sources */,
 				E38BA7D11EA1646D00B27A2D /* GenerateView.swift in Sources */,
