@@ -24,7 +24,7 @@ class HandwritingModels: NSObject {
         self._handwriting_id = "2D5QW0F80001"
         self._handwriting_name = "Molly"
         self._handwriting_size = 20.0
-        self._handwriting_color = "000000"
+        self._handwriting_color = "18689C"
         self._line_spacing = 1.5
         self._line_spacing_variance = 0.0
         self._word_spacing_variance = 0.0
