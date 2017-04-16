@@ -25,10 +25,12 @@ class SettingsViewController: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationBar(title: "Settings", rightButton: UIBarButtonItem(title: "OK", style: UIBarButtonItemStyle.plain, target: self, action: #selector(SettingsViewController.done)))
+        self.navigationBar(title: "Settings",
+                           rightButton: UIBarButtonItem(title: "OK", style: UIBarButtonItemStyle.plain, target: self, action: #selector(SettingsViewController.done)))
         self.setup()
     }
     
+    /// Setup Eureka Table, Indicateur view and get list of typefaces
     func setup() {
         self.form +++ Section("")
             <<< PushRow<String>() {
@@ -89,6 +91,7 @@ class SettingsViewController: FormViewController {
         self.listFont()
     }
     
+    /// Send request of get list of typefaces
     func listFont() {
         self.indicatorView.startAnimating()
         API().req(.getHandwritings) { (bool, json) in
@@ -108,6 +111,7 @@ class SettingsViewController: FormViewController {
         }
     }
     
+    /// Save all parameters in models and dismiss view
     func done() {
         self.handwritingModels.handwriting_size = self.form.values(includeHidden: true)["handwriting_size"] as? Float
         self.handwritingModels.handwriting_color = self.form.values(includeHidden: true)["handwriting_color"] as? String
@@ -127,6 +131,7 @@ class SettingsViewController: FormViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    /// Get AlertController with message error
     func alertError(message: String) {
         let alert = UIAlertController(title: "Error", message: message, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))

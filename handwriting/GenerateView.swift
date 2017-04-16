@@ -33,6 +33,7 @@ class GenerateView: UIView {
         self.setup()
     }
     
+    /// Setup View and add target in settings and geneerate button
     func setup() {
         UINib(nibName: "GenerateView", bundle: nil).instantiate(withOwner: self, options: nil)
         self.addSubview(view)
@@ -41,10 +42,12 @@ class GenerateView: UIView {
         self.generateButton.addTarget(self, action: #selector(GenerateView.generateButtonPress), for: .touchUpInside)
     }
     
+    /// Delegate action press button generate with protocol GenerateDelegate : GeerateView
     func generateButtonPress(button:UIButton) {
         delegate.didPressGenerateButton(button: button)
     }
     
+    /// Delegate action press button settings with protocol GenerateDelegate : GenerateView
     func settingsButtonPress(button:UIButton) {
         delegate.didPressSettingsButton(button: button)
     }

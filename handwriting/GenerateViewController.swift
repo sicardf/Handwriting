@@ -22,23 +22,25 @@ class ViewController: UIViewController, GenerateDelegate, SettingsDelegate {
         
         self.navigationBar(title: "Handwriting")
         self.setup()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
+    /// Setup GenerateView, indicatorView and HandwritingModels
     private func setup() {
+        self.handwritingModels = HandwritingModels()
+        
         self.generateView = GenerateView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height - 66))
         self.generateView.delegate = self
         self.view.addSubview(self.generateView)
+        
         self.indicatorView = setupIndicator()
         self.view.addSubview(self.indicatorView)
-        self.handwritingModels = HandwritingModels()
     }
     
+    /// Send request with all parameters in model and display image in view
     func generateImage() {
         self.indicatorView.startAnimating()
         handwritingModels.handwriting_text = self.generateView.text!
@@ -55,13 +57,14 @@ class ViewController: UIViewController, GenerateDelegate, SettingsDelegate {
         }
     }
     
+    /// Get AlertController with message error
     func alertError(message: String) {
         let alert = UIAlertController(title: "Error", message: message, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
     
-    // MARK: Generate
+    /// MARK: Generate
     func didPressGenerateButton(button:UIButton) {
         self.view.endEditing(true)
         self.generateImage()
@@ -74,7 +77,7 @@ class ViewController: UIViewController, GenerateDelegate, SettingsDelegate {
         self.present(UINavigationController(rootViewController: viewController), animated: true, completion: nil)
     }
     
-    // MARK: font
+    /// MARK: font
     func handwritingModels(handwritingModels: HandwritingModels) {
         self.handwritingModels = handwritingModels
     }
