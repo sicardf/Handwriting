@@ -27,9 +27,9 @@ $ pod install
 - Cocoapoads 1.2+
 
 #### Library
-- [Alamofire](https://github.com/Alamofire/Alamofire) - ;
-- [SwiflyJSON](https://github.com/SwiftyJSON/SwiftyJSON) - ;
-- [Eureka](https://github.com/xmartlabs/Eureka) - j
+- [Alamofire](https://github.com/Alamofire/Alamofire) - Use for make simple request with server
+- [SwiflyJSON](https://github.com/SwiftyJSON/SwiftyJSON) - Parse JSON data in Swift
+- [Eureka](https://github.com/xmartlabs/Eureka) - Make beautiful TableView in SettingsViewController
 
 
 ## License
